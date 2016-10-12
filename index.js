@@ -18,6 +18,6 @@ app.get('/', function(req,res){
 connection.start();
 routes.configure(app);
 
-app.listen(port, function() {
+app.listen(port || process.env.PORT, function() {
   console.log("Your sever is running at http://localhost:" + port);
 });
