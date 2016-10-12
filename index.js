@@ -11,6 +11,9 @@ var app = express();
 app.use(express.static(path.join(__dirname, "")));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', function(req,res){
+	res.send('hi')
+})
 
 connection.start();
 routes.configure(app);
