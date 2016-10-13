@@ -7,6 +7,7 @@ function Data() {
       var query = con.query('insert into subscribed_users(email_id) values ("'+user.email_id+'")', function(err, result) {
         if (err) {
 			console.log(query.sql)
+			console.log(user.email_id)
           res.send({ status: 1, message: err });
         } else {
 			console.log(query.sql)
