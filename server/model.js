@@ -4,7 +4,7 @@ function Data() {
 
   this.subscribeUser = function(user, res) {
     connection.execute(function(err, con) {
-      var query = con.query('insert into subscribed_users(email_id) values ('+user.email_id, function(err, result) {
+      var query = con.query('insert into subscribed_users(email_id) values ('+user.email_id+')', function(err, result) {
         if (err) {
 			console.log(query.sql)
           res.send({ status: 1, message: err });
