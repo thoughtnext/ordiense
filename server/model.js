@@ -8,7 +8,6 @@ function Data() {
         if (err) {
           console.log("Query: " + query.sql)
           console.log('user.email_id: ' + user.email_id)
-          
           res.send({ status: 1, message: err });
         } else {
           console.log("Query: " + query.sql)
