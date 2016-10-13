@@ -6,10 +6,10 @@ function Data() {
     connection.execute(function(err, con) {
       var query = con.query('insert into subscribed_users set ?', user, function(err, result) {
         if (err) {
-			console.log(query)
+			console.log(query.sql)
           res.send({ status: 1, message: err });
         } else {
-			console.log(query)
+			console.log(query.sql)
           res.send({ status: 'success', insertId: result.insertId, user: user, });
         }
         con.release();
