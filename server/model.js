@@ -4,15 +4,13 @@ function Data() {
 
   this.subscribeUser = function(user, res) {
     connection.execute(function(err, con) {
-      var query = con.query('insert into subscribed_users(email_id) values ("'+user.email_id+'")', function(err, result) {
+      var query = con.query('INSERT into subscribed_users SET ?', { 'email_id': user.email_id }, function(err, result) {
         if (err) {
-			console.log(query.sql)
-			console.log('user: '+ user)
-			console.log('user-email: '+ user.email_id)
-
+          console.log(query.sql)
           res.send({ status: 1, message: err });
         } else {
-			console.log(query.sql)
+          console.log("Query: " + query.sql)
+          console.log('user.email_id: ' + user.email_id)
           res.send({ status: 'success', insertId: result.insertId, user: user, });
         }
         con.release();
