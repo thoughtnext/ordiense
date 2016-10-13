@@ -4,10 +4,12 @@ function Data() {
 
   this.subscribeUser = function(user, res) {
     connection.execute(function(err, con) {
-      con.query('insert into subscribed_users set ?', user, function(err, result) {
+      var query = con.query('insert into subscribed_users set ?', user, function(err, result) {
         if (err) {
+			console.log(query)
           res.send({ status: 1, message: err });
         } else {
+			console.log(query)
           res.send({ status: 'success', insertId: result.insertId, user: user, });
         }
         con.release();
