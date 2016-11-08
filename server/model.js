@@ -66,7 +66,13 @@ function Data() {
   
               '<p>P.S. We love meeting new people so feel free to reach out! You can get Amit or Will on Messenger anytime.'+
               '</section>' +
-              '</td></tr></table>'
+              '</td></tr>'+
+               '<tr><td align="center" bgcolor="#ee4c50" style="padding: 10px 10px 10px 10px;">'+
+            
+                '<a href=" https://www.facebook.com/ordiense/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" style="width:30px;height:30px;margin:0px 7px;"></a>'+
+               '<a href=" https://www.linkedin.com/company/ordiense" ><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" style="width:30px;height:30px;"></a>'+
+                  
+         '</td></tr></table>'
 
               // You can choose to send an HTML body instead
     };
