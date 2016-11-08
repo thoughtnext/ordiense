@@ -71,7 +71,7 @@ function Data() {
             
                 '<a href=" https://www.facebook.com/ordiense/"><img src="http://ordiense.com/assets/images/F_icon.svg.png" style="width:30px;height:30px;margin:0px 7px;"></a>'+
                '<a href=" https://www.linkedin.com/company/ordiense" ><img src="http://ordiense.com/assets/images/LinkedIn_logo_initials.png" style="width:30px;height:30px;"></a>'+
-                  
+                '<a href=" https://twitter.com/Ordiense" ><img src="http://ordiense.com/assets/images/twitter-logo.png" style="width:30px;height:30px;margin:0px 5px;"></a>'+  
          '</td></tr></table>'
 
               // You can choose to send an HTML body instead
